@@ -1,0 +1,104 @@
+.sub-topic{
+    letter-spacing: 10px;
+}
+
+.button{
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button-small{
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button-shadow{
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+}
+
+.button-blue{
+    background-color: var(--blue);
+}
+
+.button-cream{
+    background-color: var(--cream);
+}
+
+.button-green{
+    background-color: var(--green);
+}
+
+.button-white{
+    background-color: var(--white);
+}
+
+.border-green{
+    border: 5px solid var(--green);
+}
+
+.undecorate{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+}
+
+.circle{
+    background-color: var(--black);
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+}
+
+.text-blue{
+    color: var(--blue);
+}
+
+.text-black{
+    color: var(--black);
+}
+
+.text-cream{
+    color: var(--cream);
+}
+
+.text-green{
+    color: var(--green);
+}
+
+.text-gray{
+    color: var(--gray);
+}
+
+.text-white{
+    color: var(--white)
+}
+
+.text-orange{
+    color: var(--orange);
+}
+
+.text-shadow{
+    color: 5px 5px rgba(0,0,0,0.5);
+}
+
+.martop-3{
+    margin-top: 24px;
+}
+
+.martop-4{
+    margin-top: 48px;
+}
+
+.martop-5{
+    margin-top: 64px;
+}
+
+.image-shadow{
+    box-shadow: 0 -25px rgba(0,0,0,0.5);
+}

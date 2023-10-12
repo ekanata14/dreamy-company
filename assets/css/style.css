@@ -1,0 +1,152 @@
+:root{
+    --black: #000;
+    --blue: #1b557a;
+    --cream: #d2bf95;
+    --green: #819B30;
+    --greenlight : #B0D341;
+    --gray: #b2b2b2;
+    --white: #fff;
+    --orange: #FEA101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    
+}
+
+body{
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    background-image: url(../images/landing-text-3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    backdrop-filter: blur(2px);
+}
+
+h1{
+    color: var(--black);
+}
+
+/* Header CSS */
+header{
+    width: 100%;
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Typewriter Effect */
+.typewriter-wrapper{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.typewriter{
+    position: relative;
+}
+
+.typewriter::after{
+    content: '';
+    width: 1px; border-right: 5px solid #fff;
+    height: 100%;
+    margin-left: 0.5rem;
+    animation: blink 1s infinite;
+}
+
+.typewriter-title-big{
+    font-weight: 800;
+    font-size: 72px;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Body Content CSS */
+.body-content{
+    height: 88%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    height: 100%;
+}
+
+.landing-content-p{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.left-content{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+
+.left-content-p{
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.right-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Features CSS */
+
+.features-content{
+    width: 100%;
+    background-color: var(--greenlight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.features-wrapper{
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 20px;
+}
+
+.feature{
+    width:50%;
+}
