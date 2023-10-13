@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/components.css">
 </head>
 <body>
+    <div class="curtain"></div>
     <!-- Header Start -->
     <header>
         <div class="header-wrapper">
@@ -31,35 +32,33 @@
         <div class="landing-content">
             <div class="left-content">
                 <div class="typewriter-wrapper martop-5">
-                    <h3 class="sub-topic text-gray">DREAMY COMPANY</h3>
-                    <h1 class="typewriter-title-big">Make AI be Your </h1>
-                    <h1 class="typewriter typewriter-title-big text-green" style="text-shadow: 4px 3px rgba(0,0,0,0.2);"></h1>
-                    <p class="left-content-p">We make AI tools for helping everybody doing their activities and works. We do have some AI tools based on your needs. Check out our AI features below.</p>
+                    <h3 class="sub-topic text-gray element-ease-in-transition">DREAMY COMPANY</h3>
+                    <h1 class="typewriter-title-big element-ease-in-transition">Make AI be Your </h1>
+                    <h1 class="typewriter typewriter-title-big text-green element-ease-in-transition" style="text-shadow: 2px 2px rgba(0,0,0,0.2);"></h1>
+                    <p class="left-content-p element-ease-in-transition">We make AI tools for helping everybody doing their activities and works. We do have some AI tools based on your needs. Check out our AI features below.</p>
                 <div class="buttons martop-5">
                     <h4>
-                        <a href="#" class="button button-white button-shadow text-green border-green">See Our Features</a>
+                        <a href="#ourFeatures" class="button button-white button-shadow text-green border-green element-ease-in-transition">See Our Features</a>
                     </h4>
                 </div>
                 </div> 
             </div>
             <div class="right-content">
-                <img src="/assets/images/robot.png" alt="robot-image" style="height: 800px;" class="iamge-shadow">
+                <img src="/assets/images/robot.png" alt="robot-image" style="height: 800px;" class="ease-in-transition" id="robotImage">
             </div> 
        </div>
-       <div class="features-content">
+       <div class="features-content" id="ourFeatures">
             <h1 class="sub-topic text-white">OUR FEATURES</h1>
             <div class="features-wrapper martop-3">
                 <div class="feature">
-                    <img src="/assets/images/features-1.jpg" alt="test" width="700">
-                </div>
+                    <img data-lazy="/assets/images/features-1.jpg" width="700" id="featureImg" class="feature-img">
+                    <h2 class="text-white martop-2">Dreamy Chat</h2>
+                    <p class="martop-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officiis debitis non earum ipsum cum at? Tempora soluta id, magnam similique illo obcaecati sit voluptas incidunt saepe tempore exercitationem vitae.</p>     
+               </div>
                 <div class="feature">
-                    <img src="/assets/images/features-1.jpg" alt="test" width="700">
-                </div>
-                <div class="feature">
-                    <img src="/assets/images/features-1.jpg" alt="test" width="700">
-                </div>
-                <div class="feature">
-                    <img src="/assets/images/features-1.jpg" alt="test" width="700">
+                    <img data-lazy="/assets/images/features-1.jpg" width="700" id="featureImg" class="feature-img">
+                    <h2 class="text-white martop-2">Dreamy Image</h2>
+                    <p class="martop-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officiis debitis non earum ipsum cum at? Tempora soluta id, magnam similique illo obcaecati sit voluptas incidunt saepe tempore exercitationem vitae.</p>     
                 </div>
             </div>
        </div>

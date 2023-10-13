@@ -14,10 +14,6 @@
     padding: 0;
 }
 
-html{
-    
-}
-
 body{
     height: 100%;
     font-family: Helvetica, sans-serif;
@@ -30,6 +26,27 @@ body{
 
 h1{
     color: var(--black);
+}
+
+/* Curtain CSS */
+.curtain{
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-color: var(--greenlight);
+    z-index: 1;
+    top:-1000px;
+    animation: curtainOpen 1s ease-out;
+}
+
+@keyframes curtainOpen {
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top:-1000px;
+    }
 }
 
 /* Header CSS */
@@ -65,7 +82,8 @@ header{
 
 .typewriter::after{
     content: '';
-    width: 1px; border-right: 5px solid #fff;
+    width: 1px;
+    border-right: 5px solid var(--greenlight);
     height: 100%;
     margin-left: 0.5rem;
     animation: blink 1s infinite;
@@ -148,5 +166,24 @@ header{
 }
 
 .feature{
-    width:50%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.feature-img{
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.feature-img:hover{
+    opacity: 0.7;
+}
+
+#ourFeatures{
+    scroll-behavior: smooth;
 }
