@@ -176,7 +176,7 @@ header{
 
 .feature-img{
     border-radius: 20px;
-    cursor: pointer;
+    cursor: poin;
     transition: 0.3s ease-in;
 }
 
@@ -186,4 +186,36 @@ header{
 
 #ourFeatures{
     scroll-behavior: smooth;
+}
+
+/* Join Content CSS */
+
+.join-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Footer CSS */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 100px 0;
+}
+
+.footer-wrapper{
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
