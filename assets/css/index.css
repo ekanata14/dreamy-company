@@ -1,0 +1,7 @@
+body{
+    background-image: url(../images/landing-text-3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    backdrop-filter: blur(2px);
+}

@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dreamy AI</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Must Exists -->
     <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/transition.css">
+
+    <!-- Optionally Exists -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
     <div class="curtain"></div>
@@ -17,11 +22,11 @@
             </div>
             <div class="header-menu">
                 <h5>
-                    <a href="#" class="undecorate underline" style="padding-bottom: 5px;">Login</a>                    
+                    <a href="/pages/signIn.html" class="undecorate underline" style="padding-bottom: 5px;">Sign In</a>                    
                 </h5>
                 <div class="circle"></div>
                 <h5>
-                     <a href="#" class="undecorate underline" style="padding-bottom: 5px;">Register</a>                 
+                     <a href="/pages/signUp.html" class="undecorate underline" style="padding-bottom: 5px;">Sign Up</a>                 
                 </h5>
             </div>
         </div>
@@ -47,16 +52,16 @@
                 <img src="/assets/images/robot.png" alt="robot-image" style="height: 800px;" class="ease-in-transition" id="robotImage">
             </div> 
        </div>
-       <div class="features-content" id="ourFeatures">
+       <div class="features-content bg-greenlight" id="ourFeatures">
             <h1 class="sub-topic text-white">OUR FEATURES</h1>
             <div class="features-wrapper martop-3">
                 <div class="feature">
-                    <img data-lazy="/assets/images/features-1.jpg" width="700" id="featureImg" class="feature-img">
+                    <img data-lazy="/assets/images/features.jpg" width="700" id="featureImg" class="feature-img">
                     <h2 class="text-white martop-2">Dreamy Chat</h2>
                     <p class="martop-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officiis debitis non earum ipsum cum at? Tempora soluta id, magnam similique illo obcaecati sit voluptas incidunt saepe tempore exercitationem vitae.</p>     
                </div>
                 <div class="feature">
-                    <img data-lazy="/assets/images/features-1.jpg" width="700" id="featureImg" class="feature-img">
+                    <img data-lazy="/assets/images/features.jpg" width="700" id="featureImg" class="feature-img">
                     <h2 class="text-white martop-2">Dreamy Image</h2>
                     <p class="martop-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officiis debitis non earum ipsum cum at? Tempora soluta id, magnam similique illo obcaecati sit voluptas incidunt saepe tempore exercitationem vitae.</p>     
                 </div>
@@ -67,8 +72,8 @@
             <h1>Interested to join with Us?</h1>
             <p class="martop-2">Create account or sign in below</p>
             <div class="join-buttons martop-3">
-                <a href="#" class="button button-greenlight button-shadow">Register</a>
-                <a href="#" class="button button-greenlight button-shadow">Sign In</a>
+                <a href="/pages/signUp.html" class="button button-greenlight button-shadow">Sign Up</a>
+                <a href="/pages/signIn.html" class="button button-greenlight button-shadow">Sign In</a>
             </div>
         </div>
       </div>

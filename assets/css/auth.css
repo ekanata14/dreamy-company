@@ -9,3 +9,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.auth-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-bg-image{
+    background-image: url(../images/alex-knight-robot-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}

@@ -14,16 +14,6 @@
     padding: 0;
 }
 
-body{
-    height: 100%;
-    font-family: Helvetica, sans-serif;
-    background-image: url(../images/landing-text-3.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    backdrop-filter: blur(2px);
-}
-
 h1{
     color: var(--black);
 }
@@ -150,8 +140,7 @@ header{
 
 .features-content{
     width: 100%;
-    background-color: var(--greenlight);
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
