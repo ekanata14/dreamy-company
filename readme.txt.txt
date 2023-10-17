@@ -1,0 +1,1 @@
+Untuk menjalankan website ini, disarankan menggunakan live server agar semua fungsi berjalan dengan baik

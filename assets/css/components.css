@@ -340,6 +340,10 @@ body{
     color: var(--orange);
 }
 
+.text-orangelight{
+    color: var(--orangelight);
+}
+
 .text-bluelight{
     color: var(--bluelight)
 }

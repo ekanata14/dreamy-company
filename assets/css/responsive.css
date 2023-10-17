@@ -163,7 +163,7 @@
     .auth{
         background-image: url(../images/auth-image.jpg);
         background-size: cover;
-        background-position: end;
+        background-position: center;
     }
 
     #featureImg{
