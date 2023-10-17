@@ -7,41 +7,96 @@
     <!-- Must Exists -->
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/transition.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <!-- Optionally Exists -->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/dashboard.css">
+    <link rel="stylesheet" href="/assets/css/background.css">
 </head>
 <body>
     <div class="curtain"></div>
+    <div class="menu-responsive" id="menuResponsive">
+        <div class="bg-orange mar-1 pad-1 border-radius-10">
+            <a href="dashboard.html" class="undecorate"><img src="../assets/icons/home.jpg" alt="home-icon" class="width-50-px border-radius-circle"></a>
+        </div>
+        <a href="../index.html" class="undecorate"><img src="../assets/icons/logout.jpg" alt="logout-icon" class="width-50-px border-radius-circle"></a>
+    <div class="bg-blue text-white height-75-px pad-x-2 display-flex align-center border-radius-10" onclick="location.href='profile.html'">
+        <h3 class="font-weight-200">username</h3>
+        <img src="../assets/images/robot.png" alt="user-img" class="width-50-px border-radius-circle">
+    </div>
+    <h1 class="text-white" onclick="openMenu(0)">X</h1>
+    </div>
     <!-- Header Start -->
     <header>
-        <div class="header-wrapper">
+        <div class="header-wrapper display-flex align-center">
             <div class="header-title">
-                <h1>Dreamy Company</h1>
+                <img src="../assets/images/DreamyAI_crop.png" alt="DreamyAI-logo" width="300">
             </div>
-            <div class="header-menu">
-                <h5>Username</h5>
-                <img src="#" alt="user-img">
+            <div class="header-nav display-flex align-center bg-greenlight pad-1 border-radius-10">
+                <div class="bg-orange mar-1 pad-1 border-radius-10">
+                    <a href="dashboard.html" class="undecorate"><img src="../assets/icons/home.jpg" alt="home-icon" class="width-50-px border-radius-circle"></a>
+                </div>
+                <div class="bg-greenlight mar-1 pad-1 border-radius-10">
+                    <a href="chat.html" class="undecorate"><img src="../assets/images/chat-feature.jpg" alt="chat-icon" class="width-50-px border-radius-circle"></a>
+                </div>
+                <div class="bg-greenlight mar-1 pad-1 border-radius-10">
+                    <a href="image.html" class="undecorate"><img src="../assets/images/image-feature.jpg" alt="image-icon" class="width-50-px border-radius-circle"></a>
+                </div>
+                <div class="bg-greenlight mar-1 pad-1 border-radius-10">
+                    <a href="chat.html" class="undecorate"><img src="../assets/icons/logout.jpg" alt="logout-icon" class="width-50-px border-radius-circle"></a>
+                </div> 
+            </div>
+            <div class="header-menu bg-blue text-white height-75-px pad-x-2 display-flex align-center border-radius-10 cursor-pointer" onclick="location.href='profile.html'">
+                <h3 class="font-weight-200">username</h3>
+                <img src="../assets/images/robot.png" alt="user-img" class="width-50-px border-radius-circle">
+            </div>
+            <div class="header-menu-responsive display-flex align-center" id="headerMenuResponsive" onclick="openMenu(1)">
+                <img src="../assets/icons/menu-orange.png" alt="menu-icon" class="width-75-px profile-vector-img">
             </div>
         </div>
     </header>
     <!-- Header End -->
     <!-- Body Start -->
     <div class="body-content"> 
-        <div class="wrapper user-profile">
-            <h1>User Profile</h1>
+       <div class="features-content" id="ourFeatures">
+        <div class="display-grid grid-template-columns-50 width-100 user-profile-container">
+            <!-- <div class="features-wrapper martop-3"> -->
+            <form action="dashboard.html" class="auth-input-container display-flex flex-dir-column align-center justify-center border-radius-50">
+                <h1>User Profile</h1>
+                <div class="field display-flex flex-dir-column align-start mar-y-2 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Username</h3>
+                    <input type="text" name="username" placeholder="Username" class="input-field"> 
+                </div>
+                <div class="field display-flex flex-dir-column align-start mar-y-2 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Email</h3>
+                    <input type="email" name="email" placeholder="Email" class="input-field"> 
+                </div>
+                <div class="field display-flex flex-dir-column align-start marbot-3 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Password</h3>
+                    <input type="password" name="password" placeholder="********" class="input-field"> 
+                </div>
+                <div class="field display-flex flex-dir-column align-start marbot-3 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Password</h3>
+                    <input type="password" name="password" placeholder="********" class="input-field"> 
+                </div>
+                <div class="field display-flex flex-dir-column align-center width-50 martop-2">
+                    <button class="button button-small button-orange text-white border-orange border-none width-100 border-radius-50">Apply</button>
+               </div> 
+            </form> 
+            <img src="../assets/images/auth-image.jpg" alt="profile-vector-img" class="width-100">
+            </div>
+       <!-- </div> --> 
         </div>
-      <footer class="martop-5">
+     <footer class="martop-5">
         <div class="footer-wrapper">
-            <h1>Dreamy Company</h1>
-            <p class="martop-2">&copy; 2023</p>
+            <img src="../assets/images/DreamyCompany_crop.png" alt="DreamyAI-logo" width="300">
+            <p class="martop-2 text-white">&copy; 2023</p>
             <div class="list">    
             </div>
         </div>
       </footer>
     </div> 
     <!-- Body End -->
-    <script src="/assets/javascript/script.js"></script>
+    <script src="/assets/javascript/openMenu.js"></script>
 </body>
 </html>

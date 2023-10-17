@@ -3,11 +3,39 @@ html, body{
     width: 100%;
 }
 
-.chat-body-content{
-    height: 100%;
-    width: 100%;
+.body-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+}
+
+.chat-body-content{
+    height: 90%;
+    width: 95%;
+    max-width: 1900px;
+}
+
+.chat-inactive{
+    cursor: pointer;
+    background-color: var(--gray);
+}
+
+.chat-inactive:hover{
+    cursor: pointer;
+    background-color: var(--gray);
+}
+
+.chat-active{
+    cursor: pointer;
+    background-color: var(--greenlight);
+}
+
+.chat-active:hover{
+    background-color: var(--green);
+}
+
+.chat-input-field{
+    padding: 20px 20px;
+    border: none;
+    transition: 0.2s ease-in;
+    outline: none;
 }

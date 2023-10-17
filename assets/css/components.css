@@ -1,8 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     height: 100%;
     font-family: Helvetica, sans-serif;
 }
 
+/* Wrapper */
 .wrapper{ 
     width: 1500px;
     display: flex;
@@ -25,8 +30,55 @@ body{
     grid-template-columns: 25% 75%;
 }
 
+.wrapper-70-30-side{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.wrapper-75-25-side{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.wrapper-60-40-side{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.wrapper-30-70-side{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.wrapper-20-80-side{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.wrapper-10-90-side{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+/* Width CSS */
 .width-100{
     width: 100%;
+}
+
+.width-90{
+    width: 90%;
 }
 
 .width-75{
@@ -41,8 +93,46 @@ body{
     width: 25%;
 }
 
+.width-50-px{
+    width: 50px;
+}
+
+.width-75-px{
+    width: 75px;
+}
+
+.width-100-px{
+    width: 100px;
+}
+
+.width-200-px{
+    width: 200px;
+}
+
+.width-300-px{
+    width: 300px;
+}
+
+.width-400-px{
+    width: 400px;
+}
+
+.width-500-px{
+    width: 500px;
+}
+
+/* Max Width */
+.max-width-100{
+    max-width: 100%;
+}
+
+/* Height CSS */
 .height-100{
     height: 100%;
+}
+
+.height-85{
+    height: 85%;
 }
 
 .height-75{
@@ -57,16 +147,75 @@ body{
     height: 25%;
 }
 
+.height-10{
+    height: 10%;
+}
+
+.height-50-px{
+    height: 50px;
+}
+
+.height-75-px{
+    height: 75px;
+}
+
+.height-800-px{
+    height: 800px;
+}
+
+.height-700-px{
+    height: 700px;
+}
+
+.height-600-px{
+    height: 600px;
+}
+
+.height-500-px{
+    height: 500px;
+}
+
+.height-400-px{
+    height: 400px;
+}
+
+.height-300-px{
+    height: 300px;
+}
+
+.height-200-px{
+    height: 200px;
+}
+
+.height-100-px{
+    height: 100px;
+}
+
+/* Max Height */
+.max-height-800-px{
+    max-height: 800px;
+}
+
+.max-height-700-px{
+    max-height: 700px;
+}
+
+.max-height-600-px{
+    max-height: 700px;
+}
+
 .sub-topic{
     letter-spacing: 10px;
 }
 
+/* Button */
 .button{
     padding: 20px 15px;
     text-decoration: none;
     color: #fff;
     border-radius: 10px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .button-small{
@@ -109,6 +258,10 @@ body{
     background-color: var(--greenlight);
 }
 
+.button-orange{
+    background-color: var(--orange);
+}
+
 .button-greenlight:hover{
     background-color: var(--green);
 }
@@ -117,8 +270,16 @@ body{
     background-color: var(--white);
 }
 
+.border-none{
+    border: none;
+}
+
 .border-green{
     border: 5px solid var(--greenlight);
+}
+
+.border-orange{
+    border: 5px solid var(--orange);
 }
 
 .undecorate{
@@ -132,6 +293,23 @@ body{
     height: 7px;
     width: 7px;
     border-radius: 50%;
+}
+
+/* Text CSS */
+.text-align-start{
+    text-align: start;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-end{
+    text-align: end;
+}
+
+.text-align-justify{
+    text-align: justify;
 }
 
 .text-blue{
@@ -162,10 +340,70 @@ body{
     color: var(--orange);
 }
 
+.text-bluelight{
+    color: var(--bluelight)
+}
+
 .text-shadow{
     color: 5px 5px rgba(0,0,0,0.5);
 }
 
+/* Font Size */
+.font-size-18-px{
+    font-size: 18px;
+}
+
+.font-size-24px{
+    font-size: 24px;
+}
+
+/* Font Weight */
+.font-weight-800{
+    font-weight: 800;
+}
+
+.font-weight-700{
+    font-weight: 700;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
+.font-weight-500{
+    font-weight: 500;
+}
+
+.font-weight-400{
+    font-weight: 400;
+}
+
+.font-weight-300{
+    font-weight: 300;
+}
+
+.font-weight-200{
+    font-weight: 200;
+}
+
+.font-weight-100{
+    font-weight: 100;
+}
+
+/* Line Height CSS */
+.line-height-18-px{
+    line-height: 18px;
+}
+
+.line-height-24-px{
+    line-height: 24px;
+}
+
+.line-height-32-px{
+    line-height: 32px;
+}
+
+/* Margin CSS */
 .martop-1{
     margin-top: 6px;
 }
@@ -206,6 +444,46 @@ body{
     margin-bottom: 64px;
 }
 
+.marright-1{
+    margin-right: 6px;
+}
+
+.marright-2{
+    margin-right: 12px;
+}
+
+.marright-3{
+    margin-right: 24px;
+}
+
+.marright-4{
+    margin-right: 48px;
+}
+
+.marright-5{
+    margin-right: 64px;
+}
+
+.marleft-1{
+    margin-left: 6px;
+}
+
+.marleft-2{
+    margin-left: 12px;
+}
+
+.marleft-3{
+    margin-left: 24px;
+}
+
+.marleft-4{
+    margin-left: 48px;
+}
+
+.marleft-5{
+    margin-left: 64px;
+}
+
 .mar-y-1{
     margin: 6px 0;
 }
@@ -226,6 +504,27 @@ body{
     margin: 64px 0;
 }
 
+.mar-1{
+    margin: 6px;
+}
+
+.mar-2{
+    margin: 12px;
+}
+
+.mar-3{
+    margin: 24px;
+}
+
+.mar-4{
+    margin: 48px;
+}
+
+.mar-5{
+    margin: 64px;
+}
+
+/* Padding CSS */
 .padtop-1{
     padding-top: 6px; 
 }
@@ -267,31 +566,53 @@ body{
 }
 
 .pad-y-1{
-    padding: 6px 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .pad-y-2{
-    padding: 12px 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .pad-y-3{
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .pad-y-4{
-    padding: 48px 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .pad-y-5{
-    padding: 64px 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .pad-x-1{
-    padding: 0 6px;
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
 .pad-x-2{
-    padding: 0 12px;
+    padding-right: 12px;
+    padding-left: 12px;   
+}
+
+.pad-x-3{
+    padding-right: 24px;
+    padding-left: 24px;   
+}
+
+.pad-x-4{
+    padding-right: 48px;
+    padding-left: 48px;
+}
+
+.pad-x-5{
+    padding-right: 64px;
+    padding-left: 64px;
 }
 
 .pad-x-3{
@@ -306,19 +627,49 @@ body{
     padding: 0 64px;
 }
 
+.pad-1{
+    padding: 6px;
+}
+
+.pad-2{
+    padding: 12px;
+}
+
+.pad-3{
+    padding: 24px;
+}
+
+.pad-4{
+    padding: 48px;
+}
+
+.pad-5{
+    padding: 64px;
+}
+
 .image-shadow{
     box-shadow: 0 -25px rgba(0,0,0,0.5);
 }
 
-.underline{
+.underline-green{
    border-bottom: 2px solid var(--greenlight); 
    transition: 0.2s;
 }
 
-.underline:hover{
+.underline-orange{
+   border-bottom: 2px solid var(--orange); 
+   transition: 0.2s;
+}
+
+.underline-green:hover{
     border-bottom: 6px solid var(--greenlight);
 }
 
+.underline-orange:hover{
+    border-bottom: 6px solid var(--orange);
+}
+
+/* Flexbox CSS */
 .display-flex{
     display: flex;
 }
@@ -355,9 +706,58 @@ body{
     align-items: end;
 }
 
+.display-grid{
+    display: grid;
+}
+
+.grid-template-columns-20{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.grid-template-columns-25{
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.grid-template-columns-50{
+    grid-template-columns: 50% auto;
+}
+
+.grid-template-rows-100{
+    grid-template-rows: 100%;
+}
+
 /* Background CSS */
 .bg-greenlight{
     background-color: var(--greenlight);
+}
+
+.bg-bluelight{
+    background-color: var(--bluelight);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.bg-white{
+    background-color: var(--white);
+}
+
+.bg-gray{
+    background-color: var(--graylight);
+}
+
+.bg-black{
+    background-color: var(--black);
+}
+
+.bg-orange{
+    background-color: var(--orange);
+}
+
+/* Border CSS */
+.border-radius-5{
+    border-radius: 5px;
 }
 
 .border-radius-10{
@@ -376,21 +776,35 @@ body{
     border-radius: 40px;
 }
 
+.border-radius-50{
+    border-radius: 50px;
+}
+
+.border-radius-circle{
+    border-radius: 50%;
+}
+
 .drop-shadow-vertical{
     box-shadow: 0 10px rgba(0,0,0,0.3);
+}
+
+.drop-shadow-vertical:active{
+    position: relative;
+    box-shadow: 0 0 rgba(0, 0, 0, 0.3);
+    top: 10px;
 }
 
 .input-field{
     padding: 10px 10px;
     border: none;
-    width: 50%;
-    transition: 0.2s ease-in;
-}
-
-.input-field:focus{
+    border-bottom: 1px solid var(--black);
     width: 100%;
+    transition: 0.2s ease-in;
+    outline: none;
+    background: none;
 }
 
+/* Position CSS */
 .position-relative{
     position: relative;
 }
@@ -417,4 +831,22 @@ body{
 
 .bottom-50{
     bottom: 50px;
+}
+
+/* Overflow */
+.overflow-auto{
+    overflow: auto;
+}
+
+.overflow-scroll{
+    overflow: scroll;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+/* Cursor */
+.cursor-pointer{
+    cursor: pointer;
 }

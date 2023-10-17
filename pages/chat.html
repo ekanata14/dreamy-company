@@ -7,33 +7,101 @@
     <!-- Must Exists -->
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/transition.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <!-- Optionally Exists -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/chat.css">
 </head>
 <body>
-    <div class="curtain"></div>
-    <!-- Body Start -->
-    <div class="chat-body-content"> 
-        <div class="wrapper-25-75-side">
-            <div class="chat-history">
-                <h1>Chat History</h1>
+    <!-- <div class="curtain"></div> -->
+    <div class="menu-responsive" id="menuResponsive">
+        <div class="bg-orange mar-1 pad-1 border-radius-10">
+            <a href="dashboard.html" class="undecorate"><img src="../assets/icons/home.jpg" alt="home-icon" class="width-50-px border-radius-circle"></a>
+        </div>
+        <div class="bg-greenlight mar-1 pad-1 border-radius-10">
+            <a href="chat.html" class="undecorate"><img src="../assets/images/chat-feature.jpg" alt="chat-icon" class="width-50-px border-radius-circle"></a>
+        </div>
+        <div class="bg-orange mar-1 pad-1 border-radius-10">
+            <a href="image.html" class="undecorate"><img src="../assets/images/image-feature.jpg" alt="image-icon" class="width-50-px border-radius-circle"></a>
+        </div>
+        <div class="bg-blue text-white height-75-px pad-x-2 display-flex align-center border-radius-10" onclick="location.href='profile.html'">
+        <h3 class="font-weight-200">username</h3>
+        <img src="../assets/images/robot.png" alt="user-img" class="width-50-px border-radius-circle">
+        </div>
+        <h1 class="text-white" onclick="openMenu(0)">X</h1>
+    </div>     
+    </div>
+    <header-chat>
+        <div class="header-wrapper display-flex align-center">
+            <div class="header-title display-flex align-center">
+                <img src="../assets/images/DreamyAI_crop.png" alt="DreamyAI-logo" width="300">
             </div>
-            <div class="chat-field position-relative">
-                <div class="chats">
-                    <h1>chat</h1>
+            <div class="header-nav display-flex align-center bg-greenlight pad-1 border-radius-10">
+                <div class="bg-greelight mar-1 pad-1 border-radius-10">
+                    <a href="dashboard.html" class="undecorate"><img src="../assets/icons/home.jpg" alt="home-icon" class="width-50-px border-radius-circle"></a>
                 </div>
-                <div class="chat-input position-absolute bottom-50 width-100">
-                    <div class="display-flex flex-dir-row">
-                        <input type="text" class="width-75">
-                        <h3>Icon</h3>
+                <div class="bg-orange mar-1 pad-1 border-radius-10">
+                    <a href="chat.html" class="undecorate"><img src="../assets/images/chat-feature.jpg" alt="chat-icon" class="width-50-px border-radius-circle"></a>
+                </div>
+                <div class="bg-greenlight mar-1 pad-1 border-radius-10">
+                    <a href="image.html" class="undecorate"><img src="../assets/images/image-feature.jpg" alt="image-icon" class="width-50-px border-radius-circle"></a>
+                </div>
+            </div>
+            <div class="header-menu bg-blue text-white height-75-px pad-x-2 display-flex align-center border-radius-10 cursor-pointer" onclick="location.href='profile.html'">
+                <h3 class="font-weight-200">username</h3>
+                <img src="../assets/images/robot.png" alt="user-img" class="width-50-px border-radius-circle">
+            </div>
+            <div class="header-menu-responsive display-flex align-center" id="headerMenuResponsive" onclick="openMenu(1)">
+                <img src="../assets/icons/menu-orange.png" alt="menu-icon" class="width-75-px">
+            </div>
+        </div>
+    </header-chat>
+    <!-- Body Start -->
+    <div class="body-wrapper">
+        <div class="chat-body-content display-flex"> 
+        <div class="wrapper-20-80-side">
+            <div class="chat-history display-flex flex-dir-column align-start pad-3">
+                <div class="chat-history display-flex flex-dir-column align-start">
+                    <button class="button button-greenlight height-75-px width-200-px border-none border-radius-50 font-weight-600 display-flex align-center"> 
+                        <img src="../assets/icons/plus.png" alt="plus-icon" class="width-50-px marright-1">      
+                        <h3>New Chat</h3>
+                    </button>
+                    <h3 class="mar-y-2">Recent</h3>
+                    <div class="chat-active width-100 pad-3 border-radius-50 marbot-2 display-flex align-center text-white">
+                        <img src="../assets/icons/chat.png" alt="chat-icon" class="width-50-px">
+                        <h3>Generate lorem ipsum text</h3>
+                    </div>
+                    <div class="chat-inactive width-100 pad-3 border-radius-50 text-white display-flex align-center"> 
+                        <img src="../assets/icons/chat.png" alt="chat-icon" class="width-50-px">
+                        <h3>Front end developing at the biggest effort</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-field position-relative bg-bluelight width-100 pad-4 border-radius-30 marbot-3 height-800-px display-flex flex-dir-column">
+                    <div class="chat-profile display-flex flex-dir-row align-center pad-3 element-ease-in-transition">
+                        <img src="../assets/images/robot.png" alt="profile-img" class="width-50-px border-radius-circle">
+                        <h3 class="marleft-2">Generate lorem ipsum text</h3>
+                    </div>
+                    <div class="chat-result display-flex flex-dir-column bg-white pad-4 border-radius-20 height-100 text-align-justify overflow-auto element-ease-in-transition">
+                        <p class="font-weight-200 font-size-18-px line-height-24px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nisi eaque voluptatem eum excepturi laborum reprehenderit, tempora ut nostrum molestiae, neque perspiciatis quisquam numquam rem accusamus architecto est possimus. Similique doloremque, sit rerum repellat sed ducimus doloribus qui consequatur. Molestias minus officiis dolor atque asperiores reprehenderit saepe rerum blanditiis rem non. Culpa sapiente itaque possimus ea unde cum illo consequuntur molestias earum libero at, delectus recusandae corporis alias enim voluptatibus voluptatum voluptate aliquam, placeat optio! Culpa deserunt quae labore. Nisi numquam dolore praesentium dolores, magnam nam! Aliquid doloribus deleniti similique est laudantium vitae perspiciatis minus! Explicabo similique consectetur, id quia aperiam velit sint ipsum sit magnam quae qui officiis nemo eum repellat quos voluptatum asperiores iusto expedita cum veniam repellendus. Facilis laudantium corporis inventore voluptatum ab maiores, aut dolore optio eos sequi quas, consectetur fugit incidunt. Sequi adipisci distinctio illo, perferendis recusandae eius pariatur ut reprehenderit dolores explicabo sapiente saepe reiciendis animi eveniet facilis non ducimus eos praesentium exercitationem. Eaque amet fugiat maxime unde similique alias! Nobis, praesentium eaque consequatur quasi eum, accusamus quae impedit numquam dolorem exercitationem ipsum ea voluptatem, dicta ipsa laboriosam. Ipsum minus, ab tenetur molestiae magni totam suscipit numquam voluptatum distinctio deleniti quaerat, vel, facilis labore temporibus rem doloremque magnam explicabo doloribus sit omnis perferendis nisi. Provident dignissimos dolorem, adipisci laborum, facere, animi eos molestias omnis impedit tempora reprehenderit atque ex maiores repellendus nisi perspiciatis asperiores eligendi? Consectetur nobis similique magnam laboriosam repudiandae tenetur, itaque, possimus atque ut ad hic natus culpa voluptas unde consequuntur enim esse dolorum, fugiat iure aut? Voluptates, voluptatibus? Laudantium corrupti atque modi inventore voluptatum commodi ea, illum explicabo quibusdam porro eius ex quas a, quae iste nesciunt, voluptas illo sunt recusandae asperiores! Tenetur maiores soluta suscipit cupiditate sed nostrum excepturi illo numquam. Vel nihil incidunt hic expedita optio quidem commodi! Molestias eveniet saepe similique numquam modi? Quo animi tenetur ullam, rerum sit optio inventore totam, iusto qui harum illum eum consequuntur deleniti fugit laboriosam, eaque sunt atque vitae nam! Consectetur cum, natus suscipit accusamus cupiditate, tempore praesentium officiis accusantium, in rem optio quaerat ad! Error sed temporibus tenetur perspiciatis illum explicabo possimus rerum expedita vero magnam optio obcaecati voluptate modi dolores porro aperiam, laboriosam commodi quam aut asperiores laudantium dignissimos ex pariatur! Dolor magni ratione deserunt earum animi reiciendis, fuga incidunt rem ducimus eum impedit vel voluptatum itaque nam assumenda, expedita minima odio dolore sit voluptate cumque quis? Quaerat, aperiam pariatur tenetur impedit nam sequi dolor, laudantium perspiciatis voluptatibus beatae itaque cum praesentium odio error corrupti quod optio eos maiores accusamus ipsum culpa nemo. Possimus fuga iusto sint provident adipisci neque ea at magni repellat voluptatum placeat, reiciendis culpa quas doloremque, aut omnis veniam assumenda nesciunt voluptate vitae! Doloremque perferendis quos consequuntur tempora consectetur aspernatur voluptate et nisi, enim cumque, beatae nihil. Atque vero dicta aspernatur nisi rerum, assumenda a perspiciatis, deserunt saepe qui ut tempora quod, sunt maiores consectetur voluptates eveniet ipsum magnam facilis numquam fuga iusto similique. Tenetur voluptas blanditiis natus maiores. Nihil praesentium officia commodi doloribus blanditiis sequi eligendi ab repellendus rem eius a delectus id debitis atque molestias tempore eum, non quas rerum culpa accusantium tenetur ipsam! Illum nobis, necessitatibus quibusdam debitis ab id consequuntur a nihil modi aspernatur fuga voluptatem, blanditiis fugiat commodi quas adipisci magnam. Illo voluptate totam, quaerat odit distinctio alias a suscipit error vitae consectetur cumque assumenda sapiente deserunt neque repudiandae animi itaque hic adipisci reprehenderit enim ab! Expedita, ipsum reprehenderit dignissimos culpa sint assumenda. Ab ex dolorem id dicta quibusdam reprehenderit quisquam, quidem excepturi error deleniti aspernatur sed modi eaque officiis blanditiis eligendi obcaecati vero cum neque dolores laudantium, quos minima, voluptates expedita? Nemo corrupti provident mollitia veritatis delectus? Corrupti inventore autem cumque illum, voluptas error ipsum optio recusandae facilis aspernatur magnam beatae suscipit itaque dolore repudiandae similique quae doloribus officia consequatur iure nihil ullam deleniti laborum vero. Dolor quos cum maxime nemo dignissimos hic placeat similique iste perferendis veniam corporis dolorem id recusandae accusantium labore, modi doloremque neque obcaecati pariatur cumque voluptatum accusamus praesentium! A pariatur aliquid ad porro quo, sed, repellat, perferendis ut error veniam autem itaque velit sit possimus minima quidem debitis. Ab suscipit perferendis debitis eos quod asperiores voluptatum? Velit, consectetur suscipit. Ducimus quasi suscipit similique tenetur molestiae dolor architecto sit assumenda magni ipsum consequuntur veritatis omnis, blanditiis eaque debitis quibusdam amet tempora aperiam sunt numquam libero consectetur et quae cumque. Doloremque explicabo a debitis aspernatur tempore id recusandae ullam assumenda, esse ea nisi eos distinctio pariatur magni amet asperiores dolore, architecto quibusdam tenetur ratione voluptatem velit perferendis facilis. Debitis impedit voluptas minus, odio reprehenderit aperiam dolorem nostrum aliquam. Amet reprehenderit quam dolorem omnis sit deserunt labore aliquid impedit? Laborum iusto quae officiis ex similique accusantium, placeat, voluptate fugiat recusandae neque sapiente libero iure, earum deserunt necessitatibus delectus nam incidunt eos eius veritatis amet magni provident. Voluptatum, adipisci aliquid? Ducimus, id ratione atque officia exercitationem assumenda labore quae doloremque? Odio id sequi atque temporibus dolorum ea reprehenderit ab distinctio iusto illum. Eos, iusto quia autem modi id culpa aut corrupti quam porro qui illo odit dolorum. Delectus doloribus saepe laborum voluptas quasi illo, maiores rerum, maxime accusantium laudantium, ut provident ea facilis eligendi ratione error! Deleniti explicabo modi in dolor nesciunt autem, sint delectus blanditiis ad possimus quo minus veniam incidunt impedit dolorem, quasi ipsam itaque illum? Impedit, ducimus rem enim doloremque quas modi! Facilis accusamus repudiandae cumque iusto nisi in magni ducimus! Aliquid iusto totam quo, debitis ratione consectetur nobis id sint illo perspiciatis explicabo quae suscipit, hic iure aperiam saepe, eligendi sequi? Assumenda odit sed, velit molestias iste totam blanditiis magni, natus, dolorem a accusamus? Suscipit in accusamus officiis aliquam perspiciatis quos harum enim nam hic fugiat quia, architecto consequatur consectetur nihil blanditiis quam laborum, at amet ducimus tenetur excepturi tempora ipsam placeat sunt? Dolore ab aliquid alias quibusdam facere ex culpa totam explicabo impedit? Reiciendis culpa, repudiandae hic esse sit laudantium ut harum quod earum et, tempore porro deleniti omnis quisquam nemo ipsum sunt accusamus ratione error eligendi quia mollitia. Totam veritatis praesentium repellat laborum.</p>
+                    </div>
+                    <div class="mar-y-3 element-ease-in-transition">
+                        <a href="#" class="undecorate"><img src="../assets/icons/trash.jpg" alt="image-icon" class="width-50-px border-radius-circle"></a>
+                    </div>
+                    <div class="chat-input width-100 element-ease-in-transition">
+                        <div class="display-flex flex-dir-row align-center">
+                            <textarea class="chat-input-field border-radius-20 width-90 font-size-18-px" placeholder="Write Your Prompt Here..."></textarea>
+                            <img src="../assets/icons/send.jpg" alt="user-img" class="height-75-px border-radius-circle mar-2 cursor-pointer">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div> 
-    <!-- Body End -->
-    <script src="/assets/javascript/script.js"></script>
+ 
+    </div>
+   <!-- Body End -->
+    <script src="/assets/javascript/openMenu.js"></script>
 </body>
 </html>

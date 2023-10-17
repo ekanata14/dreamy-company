@@ -7,6 +7,7 @@
     <!-- Must Exists -->
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/transition.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <!-- Optionally Exists -->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -14,20 +15,32 @@
 </head>
 <body>
     <div class="curtain"></div>
+    <div class="menu-responsive" id="menuResponsive">
+        <h5 class="button button-white">
+            <a href="/pages/signIn.html" class="undecorate" style="padding-bottom: 5px;">Sign In</a>                    
+        </h5>
+        <h5 class="button button-white">
+            <a href="/pages/signUp.html" class="undecorate" style="padding-bottom: 5px;">Sign Up</a>                 
+        </h5>
+        <h1 class="text-white" onclick="openMenu(0)">X</h1>
+    </div>
     <!-- Header Start -->
     <header>
         <div class="header-wrapper">
             <div class="header-title">
-                <h1>Dreamy Company</h1>
+                <img src="assets/images/DreamyAI_crop.png" alt="DreamyAI-logo" width="300">
             </div>
             <div class="header-menu">
                 <h5>
-                    <a href="/pages/signIn.html" class="undecorate underline" style="padding-bottom: 5px;">Sign In</a>                    
+                    <a href="/pages/signIn.html" class="undecorate underline-green" style="padding-bottom: 5px;">Sign In</a>                    
                 </h5>
                 <div class="circle"></div>
                 <h5>
-                     <a href="/pages/signUp.html" class="undecorate underline" style="padding-bottom: 5px;">Sign Up</a>                 
+                     <a href="/pages/signUp.html" class="undecorate underline-green" style="padding-bottom: 5px;">Sign Up</a>                 
                 </h5>
+            </div>
+            <div class="header-menu-responsive display-flex align-center" id="headerMenuResponsive" onclick="openMenu(1)">
+                <img src="../assets/icons/menu-orange.png" alt="menu-icon" class="width-75-px">
             </div>
         </div>
     </header>
@@ -37,39 +50,39 @@
         <div class="landing-content">
             <div class="left-content">
                 <div class="typewriter-wrapper martop-5">
-                    <h3 class="sub-topic text-gray element-ease-in-transition">DREAMY COMPANY</h3>
-                    <h1 class="typewriter-title-big element-ease-in-transition">Make AI be Your </h1>
-                    <h1 class="typewriter typewriter-title-big text-green element-ease-in-transition" style="text-shadow: 2px 2px rgba(0,0,0,0.2);"></h1>
+                    <h3 class="sub-topic text-bluelight element-ease-in-transition">DREAMY COMPANY</h3>
+                    <h1 class="typewriter-title element-ease-in-transition">Make AI be Your </h1>
+                    <h1 class="typewriter typewriter-title text-green element-ease-in-transition" style="text-shadow: 2px 2px rgba(0,0,0,0.2);"></h1>
                     <p class="left-content-p element-ease-in-transition">We make AI tools for helping everybody doing their activities and works. We do have some AI tools based on your needs. Check out our AI features below.</p>
                 <div class="buttons martop-5">
                     <h4>
-                        <a href="#ourFeatures" class="button button-white button-shadow text-green border-green element-ease-in-transition">See Our Features</a>
+                        <a href="#ourFeatures" class="button button-white button-shadow text-orange border-orange element-ease-in-transition">See Our Features</a>
                     </h4>
                 </div>
                 </div> 
             </div>
-            <div class="right-content">
-                <img src="/assets/images/robot.png" alt="robot-image" style="height: 800px;" class="ease-in-transition" id="robotImage">
+            <div class="right-content display-flex align-end">
+                <img src="/assets/images/robot-image-crop.png" alt="robot-image" class="robot-img ease-in-transition" id="robotImage">
             </div> 
        </div>
        <div class="features-content bg-greenlight" id="ourFeatures">
             <h1 class="sub-topic text-white">OUR FEATURES</h1>
             <div class="features-wrapper martop-3">
                 <div class="feature">
-                    <img data-lazy="/assets/images/features.jpg" width="700" id="featureImg" class="feature-img">
+                    <img data-lazy="/assets/images/chat-feature.jpg" id="featureImg" class="feature-img first-img">
                     <h2 class="text-white martop-2">Dreamy Chat</h2>
-                    <p class="martop-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officiis debitis non earum ipsum cum at? Tempora soluta id, magnam similique illo obcaecati sit voluptas incidunt saepe tempore exercitationem vitae.</p>     
+                    <p class="martop-2 feature-explain">AI chat that helps humans is a type of artificial intelligence that is designed to have conversations with people in a natural and informative way. AI chatbots can be used for a variety of purposes, including customer service, education, and entertainment. AI chatbots can be used to answer customer questions, resolve issues, and provide support 24/7. </p>     
                </div>
                 <div class="feature">
-                    <img data-lazy="/assets/images/features.jpg" width="700" id="featureImg" class="feature-img">
+                    <img data-lazy="/assets/images/image-feature.jpg" id="featureImg" class="feature-img second-img">
                     <h2 class="text-white martop-2">Dreamy Image</h2>
-                    <p class="martop-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officiis debitis non earum ipsum cum at? Tempora soluta id, magnam similique illo obcaecati sit voluptas incidunt saepe tempore exercitationem vitae.</p>     
+                    <p class="martop-2 feature-explain">An AI image generator is a type of artificial intelligence that can create images from text descriptions or other images. AI image generators can be used by artists for a variety of purposes. AI image generators can be used to generate new and inspiring ideas for artwork. For example, an artist could use an AI image generator to create a new concept for a painting or sculpture.</p>     
                 </div>
             </div>
        </div>
        <div class="join-content martop-4">
         <div class="wrapper">
-            <h1>Interested to join with Us?</h1>
+            <h1 class="text-align-center">Interested to join with Us?</h1>
             <p class="martop-2">Create account or sign in below</p>
             <div class="join-buttons martop-3">
                 <a href="/pages/signUp.html" class="button button-greenlight button-shadow">Sign Up</a>
@@ -79,8 +92,8 @@
       </div>
       <footer class="martop-5">
         <div class="footer-wrapper">
-            <h1>Dreamy Company</h1>
-            <p class="martop-2">&copy; 2023</p>
+            <img src="assets/images/DreamyCompany_crop.png" alt="DreamyAI-logo" width="300">
+            <p class="martop-2 text-white">&copy; 2023</p>
             <div class="list">    
             </div>
         </div>
@@ -88,5 +101,6 @@
     </div> 
     <!-- Body End -->
     <script src="/assets/javascript/script.js"></script>
+    <script src="/assets/javascript/openMenu.js"></script>
 </body>
 </html>

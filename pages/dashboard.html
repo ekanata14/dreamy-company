@@ -7,6 +7,7 @@
     <!-- Must Exists -->
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/transition.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <!-- Optionally Exists -->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -14,15 +15,29 @@
 </head>
 <body>
     <div class="curtain"></div>
+    <div class="menu-responsive" id="menuResponsive">
+            <a href="../index.html" class="undecorate"><img src="../assets/icons/logout.jpg" alt="logout-icon" class="width-50-px border-radius-circle"></a>
+        <div class="bg-blue text-white height-75-px pad-x-2 display-flex align-center border-radius-10 cursor-pointer" onclick="location.href='profile.html'">
+            <h3 class="font-weight-200">username</h3>
+            <img src="../assets/images/robot.png" alt="user-img" class="width-50-px border-radius-circle">
+        </div>
+        <h1 class="text-white" onclick="openMenu(0)">X</h1>
+    </div>
     <!-- Header Start -->
     <header>
-        <div class="header-wrapper">
+        <div class="header-wrapper display-flex align-center">
             <div class="header-title">
-                <h1>Dreamy Company</h1>
+                <img src="../assets/images/DreamyAI_crop.png" alt="DreamyAI-logo" width="300">
             </div>
-            <div class="header-menu pad-y-5 pad-x-3 bg-greenlight border-radius-10">
-                <h5>Username</h5>
-                <img src="#" alt="user-img">
+            <div class="header-nav display-flex align-center bg-greenlight pad-1 border-radius-10">
+                <a href="../index.html" class="undecorate"><img src="../assets/icons/logout.jpg" alt="logout-icon" class="width-50-px border-radius-circle"></a>
+            </div>
+            <div class="header-menu bg-blue text-white height-75-px pad-x-2 display-flex align-center border-radius-10 cursor-pointer" onclick="location.href='profile.html'">
+                <h3 class="font-weight-200">username</h3>
+                <img src="../assets/images/robot.png" alt="user-img" class="width-50-px border-radius-circle">
+            </div>
+            <div class="header-menu-responsive display-flex align-center" id="headerMenuResponsive" onclick="openMenu(1)">
+                <img src="../assets/icons/menu-orange.png" alt="menu-icon" class="width-75-px">
             </div>
         </div>
     </header>
@@ -32,19 +47,19 @@
        <div class="features-content" id="ourFeatures">
             <div class="features-wrapper martop-3">
                 <div class="feature">
-                    <img data-lazy="/assets/images/features.jpg" width="500" id="featureImg" class="feature-img">
+                    <img data-lazy="/assets/images/chat-feature.jpg" id="featureImg" class="feature-img drop-shadow-vertical" onclick="location.href='chat.html'">
                     <h2 class="text-black martop-2">Dreamy Chat</h2>
                </div>
                 <div class="feature">
-                    <img data-lazy="/assets/images/features.jpg" width="500" id="featureImg" class="feature-img">
+                    <img data-lazy="/assets/images/image-feature.jpg" id="featureImg" class="feature-img drop-shadow-vertical" onclick="location.href='image.html'">
                     <h2 class="text-black martop-2">Dreamy Image</h2>
                 </div>
             </div>
        </div>
       <footer class="martop-5">
         <div class="footer-wrapper">
-            <h1>Dreamy Company</h1>
-            <p class="martop-2">&copy; 2023</p>
+            <img src="../assets/images/DreamyCompany_crop.png" alt="DreamyAI-logo" width="300">
+            <p class="martop-2 text-white">&copy; 2023</p>
             <div class="list">    
             </div>
         </div>
@@ -52,5 +67,6 @@
     </div> 
     <!-- Body End -->
     <script src="/assets/javascript/script.js"></script>
+    <script src="/assets/javascript/openMenu.js"></script>
 </body>
 </html>

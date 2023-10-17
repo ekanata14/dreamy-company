@@ -1,7 +1,7 @@
 body{
-    background-image: url(../images/landing-text-3.svg);
-    background-size: contain;
+    background-image: url(../images/auth-image.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
-    backdrop-filter: blur(2px);
+    background-position: right;
+    backdrop-filter: blur(5px);
 }

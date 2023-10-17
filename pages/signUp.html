@@ -9,32 +9,39 @@
     <link rel="stylesheet" href="/assets/css/auth.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/transition.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 <body>
     <div class="wrapper-two-side">
-        <div class="auth-wrapper auth-bg-image ease-in-transition">
+        <div class="auth-wrapper auth-bg-image">
         </div>
-        <div class="auth-wrapper flex-dir-column element-ease-in-transition">
-            <div class="auth-input-container width-75 height-75 display-flex flex-dir-column align-center justify-center bg-greenlight border-radius-20 drop-shadow-vertical">
-                <h1>Register</h1>
-                <div class="field display-flex flex-dir-column align-center mar-y-2">
-                    <h3 class="mar-y-1">Username</h3>
+        <div class="auth-wrapper auth flex-dir-column align-center bg-greenlight">
+            <form action="dashboard.html" class="auth-input-container width-75 height-75 display-flex flex-dir-column align-center justify-center bg-white border-radius-50 element-ease-in-transition">
+                <img src="../assets/images/DreamyAI_crop.png" alt="DreamyAI-logo" width="300">
+                <div class="field display-flex flex-dir-column align-start mar-y-2 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Username</h3>
                     <input type="text" name="username" placeholder="Username" class="input-field"> 
                 </div>
-                <div class="field display-flex flex-dir-column align-center">
-                    <h3 class="mar-y-1">Email</h3>
-                    <input type="email" name="email" placeholder="example@example.com" class="input-field"> 
+                <div class="field display-flex flex-dir-column align-start mar-y-2 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Email</h3>
+                    <input type="email" name="email" placeholder="Email" class="input-field"> 
                 </div>
-                <div class="field display-flex flex-dir-column align-center">
-                    <h3 class="mar-y-1">Password</h3>
+                <div class="field display-flex flex-dir-column align-start marbot-3 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Password</h3>
                     <input type="password" name="password" placeholder="********" class="input-field"> 
                 </div>
-                <div class="field display-flex flex-dir-column align-center">
-                    <h3 class="mar-y-1">Confirm Password</h3>
-                    <input type="password" name="confirmPassword" placeholder="********" class="input-field"> 
+                <div class="field display-flex flex-dir-column align-start marbot-3 width-50">
+                    <h3 class="mar-y-1 text-black font-weight-200">Password</h3>
+                    <input type="password" name="password" placeholder="********" class="input-field"> 
                 </div>
-            </div>
-        </div>
+                <div class="field display-flex flex-dir-column align-center width-50 martop-2">
+                    <button class="button button-small button-orange text-white border-orange border-none width-100 border-radius-50">Sign Up</button>
+                    <h5 class="font-weight-200 martop-3 underline-green">
+                        <a href="signIn.html" class="undecorate">Already Have an Account?</a> 
+                    </h5>
+               </div> 
+            </form>
+       </div>
    </div>    
 </body>
 </html>
